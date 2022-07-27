@@ -2,7 +2,7 @@
 
 这个扩展插件可以通过` const 用户名 `自动翻译成 ` const userName`，解决命名焦虑；
 
-![描述](https://github.com/KanadeHu/transform-helper/blob/main/src/images/translate.gif)
+![描述](./translate.gif)
 
 ## 设置
 

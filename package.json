@@ -2,7 +2,7 @@
 	"name": "transform-helper",
 	"displayName": "transform helper",
 	"description": "",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.69.0"
 	},
@@ -36,7 +36,7 @@
 		"declare"
 	],
 	"main": "./dist/extension.js",
-	"publisher": "meganrogge",
+	"publisher": "kanadeHu",
 	"browser": "./dist/extension.js",
 	"contributes": {
 		"configuration": {
