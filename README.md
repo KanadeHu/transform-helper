@@ -2,7 +2,7 @@
 
 这个扩展插件可以通过` const 或用用户名 `方式自动翻译，解决命名焦虑；
 
-
+![描述](https://github.com/KanadeHu/transform-helper/blob/main/src/images/translate.gif)
 
 ## 设置
 
