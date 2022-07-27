@@ -9,6 +9,16 @@
 	"categories": [
 		"Other"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/KanadeHu/transform-helper"
+	},
+	"bugs": {
+		"url": "https://github.com/KanadeHu/transform-helper/issues"
+	},
+	"authors": [
+		"KanadeHu <zhangywwork@163.com.com>"
+	],
 	"activationEvents": [
 		"onLanguage:html",
 		"onLanguage:javascript",
@@ -18,7 +28,16 @@
 		"onLanguage:svelte",
 		"onLanguage:vue"
 	],
-	"main": "./dist/extension.js",
+	"icon": "src/images/logo.png",
+	"keywords": [
+		"javascript",
+		"typescript",
+		"translate",
+		"declare"
+	],
+	"main": "./out/extension.js",
+  "publisher": "meganrogge",
+  "browser": "./out/extension.js",
 	"contributes": {
 		"configuration": {
 			"title": "transform helper",
