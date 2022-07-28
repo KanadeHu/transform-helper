@@ -2,7 +2,7 @@
 	"name": "transform-helper",
 	"displayName": "transform helper",
 	"description": "This extension can automatically translate 'const 用户名' into 'const username' through const username to solve naming anxiety",
-	"version": "0.0.2",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.69.0"
 	},
