@@ -17,7 +17,7 @@
 		"url": "https://github.com/KanadeHu/transform-helper/issues"
 	},
 	"authors": [
-		"KanadeHu <zhangywwork@163.com.com>"
+		"KanadeHu <zhangywwork@163.com>"
 	],
 	"activationEvents": [
 		"onLanguage:html",
