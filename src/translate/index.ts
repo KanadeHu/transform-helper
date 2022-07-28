@@ -1,9 +1,8 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import axios from "axios";
 import md5 from "md5";
 import * as vscode from "vscode";
 import { debounce } from 'lodash';
-
+import got from "got";
 
 type TranstionItem = {
   src: string,
@@ -115,13 +114,14 @@ const getTranslationInfo = async (q: string) => {
 
   const salt = Math.floor(Math.random() * 1000000);
   const appid = configInfo.appid || "20220725001282759";
-  const key = configInfo.key || "u225Wr4ihSsCTFfE2kN9";
+  const key = configInfo.key || "8UdlA860VosMZxMUmJdg";
   const sign = md5(appid + q + salt + key);
 
   try {
-    const { data }: { data: TranstionResult } = await axios.get(url, {
-      params: { q, from: "auto", to: "en", appid, salt, sign },
-    });
+
+    const data: TranstionResult = await got.post(url, {
+      form: { from: 'auto', to: 'en',  salt, sign, q, appid },
+    }).json();
     // return camel case info
     if (data && data.trans_result && data.trans_result.length) {
       return createCamelCase(data.trans_result[0]);
