@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 import translateFun from './translate';
 
 export function activate(context: vscode.ExtensionContext) {
-    // 加入翻译功能
+    // add transtale method
     translateFun();
 }
 
