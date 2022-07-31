@@ -38,6 +38,13 @@
 				"npm: watch-tests"
 			],
 			"problemMatcher": []
+		},
+		{
+			"type": "npm",
+			"script": "changelog",
+			"problemMatcher": [],
+			"label": "npm: changelog",
+			"detail": "conventional-changelog -p angular -i CHANGELOG.md -s"
 		}
 	]
 }
